@@ -13,15 +13,19 @@ This code performs multi-label or classification estimation on images using a pr
     *   `model_name`: The name of the pre-trained model to use (e.g., 'resnet18', 'regnet_y').
     *   `dataset_name`: The dataset used for training (e.g., 'CIFAR100').
     *   `img_size`: The size of the input image (e.g., 224).
-5.  **Create an instance of the `ImageLabeler` class:**
+4.  **Create an instance of the `ImageLabeler` class:**
      `labeler = ImageLabeler(model_name=model_name, dataset_name=dataset_name, img_size=img_size)`
-6.  **Load the pre-trained models:**
+5.  **Load the pre-trained models:**
+
     `labeler.load_models()`
-7.  **Get an image from the webcam or use a downloaded image to be labeled:**
+    
+6.  **Get an image from the webcam or use a downloaded image to be labeled:**
+
     To get an image from the webcam: `labeler.getWebcamPhoto(imagename='photo.jpg')`
 8.   **Perform multi-label or classification estimation:**
+
     `labeler.image_estimate(imagename='photo.jpg')`
-9.   **The code will display the image with bounding boxes around the detected objects and their predicted label/s.**
+10.   **The code will display the image with bounding boxes around the detected objects and their predicted label/s.**
 
 ## Note
 
