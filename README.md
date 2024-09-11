@@ -12,13 +12,13 @@ This code performs multi-label or classification estimation on images using a pr
     *   `dataset_name`: The dataset used for training (e.g., 'CIFAR100').
     *   `img_size`: The size of the input image (e.g., 224).
 5.  **Create an instance of the `ImageLabeler` class:**
-    $python labeler = ImageLabeler(model_name=model_name, dataset_name=dataset_name, img_size=img_size)
+     `labeler = ImageLabeler(model_name=model_name, dataset_name=dataset_name, img_size=img_size)`
 6.  **Load the pre-trained models:**
-    $python labeler.load_models()
+    `labeler.load_models()`
 7.  **Get an image from the webcam or use a downloaded image to be labeled:**
-    To get an image from the webcam: $python labeler.getWebcamPhoto(imagename='photo.jpg')
+    To get an image from the webcam: `labeler.getWebcamPhoto(imagename='photo.jpg')`
 8.   **Perform multi-label or classification estimation:**
-    $python labeler.image_estimate(imagename='photo.jpg')
+    `labeler.image_estimate(imagename='photo.jpg')`
 9.   **The code will display the image with bounding boxes around the detected objects and their predicted label/s.**
 
 ## Note
