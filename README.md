@@ -23,7 +23,6 @@ This code performs multi-label or classification estimation on images using a pr
 
     To get an image from the webcam: `labeler.getWebcamPhoto(imagename='photo.jpg')`
 8.   **Perform multi-label or classification estimation:**
-
     `labeler.image_estimate(imagename='photo.jpg')`
 10.   **The code will display the image with bounding boxes around the detected objects and their predicted label/s.**
 
