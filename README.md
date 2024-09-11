@@ -5,7 +5,9 @@ This code performs multi-label or classification estimation on images using a pr
 
 1.  **Install required libraries:**
     Install "geomloss" and "ultralytics" libraries. Both are available for pip installation.
+    
     $pip install geomloss
+    
     $pip install ultralytics
 3.  **Define the model and dataset parameters:**
     *   `model_name`: The name of the pre-trained model to use (e.g., 'resnet18', 'regnet_y').
