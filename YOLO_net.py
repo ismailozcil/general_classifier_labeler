@@ -12,7 +12,7 @@ class ObjectDetectorYOLO:
     Detects objects in an image using a YOLOv5 model.
 
     Initializes an object detector with a specified YOLOv5 model,
-    loads the pretrained model, and detects objects in an input image.
+    loads the pre-trained model and detects objects in an input image.
 
     Args:
         model_name: The name of the YOLOv5 model to use (default: 'yolov5s').
@@ -38,7 +38,7 @@ class ObjectDetectorYOLO:
             image_path: A PIL Image or a path to the image.
 
         Returns:
-            A list of detected objects, each represented as a dictionary with bounding box and label information.
+            A list of detected objects, each represented as a dictionary with a bounding box and label information.
         """
 
         if not isinstance(image_path, (str, Image.Image)):
@@ -48,12 +48,12 @@ class ObjectDetectorYOLO:
         # Return the cropped objects with bounding boxes.
         return results.crop(save=False)
 
-class ObjectSegmentorYOLO:
+class ObjectSegmenterYOLO:
     """
     Detects and segments objects in an image using a YOLOv8 segmentation model.
 
-    Initializes an object segmentor with a specified YOLOv8 model,
-    loads the model, and defines the class names and IDs.
+    Initializes an object segmenter with a specified YOLOv8 model,
+    loads the model and defines the class names and IDs.
 
     Args:
         model_name: The name of the YOLOv8 segmentation model to use (default: 'yolov8m-seg.pt').
