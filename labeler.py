@@ -28,7 +28,8 @@ from google.colab.output import eval_js
 from base64 import b64decode
 from IPython.display import Image as IpyImage
 
-
+from pre_trained_net import FeatureExtractorNet
+from YOLO_net import ObjectDetectorYOLO, ObjectSegmenterYOLO
 
 
 class ImageLabeler:
@@ -473,7 +474,7 @@ class ImageLabeler:
         print(self.model_name)
         self.featureExtractor = FeatureExtractorNet(model_name=self.model_name)
         self.objectDetector = ObjectDetectorYOLO()
-        self.segmentator = ObjectSegmentorYOLO()
+        self.segmentator = ObjectSegmenterYOLO()
 
     def getWebcamPhoto(self, imagename='photo.jpg'):
         self.take_photo(imagename)
